@@ -1,5 +1,5 @@
 import numpy as np
-import math
+
 from scipy.special import factorial
 from scipy import sparse
 
@@ -116,7 +116,7 @@ class DifferenceNonUniformGrid:
         b = np.zeros(n)
 
         for i in range(n):
-            A[i] = x ** i / math.factorial(i)
+            A[i] = x ** i / np.math.factorial(i)
 
         b[derivative_order] = 1
 
