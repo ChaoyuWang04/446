@@ -53,7 +53,7 @@ def test_burgers(resolution, alpha):
             IC[i] = (xx-1)
         elif xx > 2 and xx < 3:
             IC[i] = (3-xx)
-
+    
     u[:] = IC
     dt = alpha*grid.dx
 
